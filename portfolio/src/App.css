@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+
+:root {
+  --first-colour: #a7dbd1;
+  --second-colour: #337473;
+  --third-colour: #ffffff;
+  --fourth-colour: black;
+}
+
+h1 {
+  position: absolute;
+  width: 625px;
+  height: 131px;
+  left: 21px;
+  top: 52px;
+
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 121px;
+
+  color: #337473;
+
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.inactive {
+  text-decoration: none;
+  color: var(--fourth-colour);
+  font-family: "Noto Sans";
+}
+
+.active {
+  color: var(--second-colour);
+  text-decoration: none;
+  font-family: "Noto Sans";
+}
