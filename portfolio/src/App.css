@@ -10,20 +10,21 @@
 
 h1 {
   position: absolute;
-  width: 625px;
-  height: 131px;
-  left: 21px;
-  top: 52px;
-
+  left: 20px;
+  top: 20px;
   font-family: "Source Sans Pro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 96px;
-  line-height: 121px;
-
-  color: #337473;
-
+  font-weight: bold;
+  color: var(--second-colour);
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+  position: absolute;
+  left: 21px;
+  top: 60px;
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  color: var(--second-colour);
 }
 
 .inactive {
@@ -36,4 +37,9 @@ h1 {
   color: var(--second-colour);
   text-decoration: none;
   font-family: "Noto Sans";
+}
+
+nav {
+  text-align: right;
+  margin-right: 10px;
 }
