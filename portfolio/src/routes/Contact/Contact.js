@@ -1,7 +1,9 @@
+import "./Contact.css"
+
 export default function Contact() {
     return (
       <main>
-        <h2>Contact</h2>
+        <h3>Contact - Under construction</h3>
       </main>
     );
   }

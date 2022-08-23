@@ -5,8 +5,6 @@ function App() {
   return (
     <div className="App">
       <div className="nav">
-        <h1>Emma Kennard</h1>
-        <h2>Junior Developer</h2>
         <nav activeclassname="active">
           <NavLink className="inactive" to="/">
             Home   |
@@ -24,6 +22,8 @@ function App() {
         </nav>
         <Outlet />
       </div>
+      <h1>Emma Kennard</h1>
+      <h2>Junior Developer</h2>
     </div>
   );
 }

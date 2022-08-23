@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans");
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --first-colour: #a7dbd1;
   --second-colour: #337473;
@@ -9,19 +14,27 @@
 }
 
 h1 {
-  position: absolute;
-  left: 20px;
-  top: 20px;
+  padding-left: 1.5%;
+  margin-top: -3%;
   font-family: "Source Sans Pro";
+  font-size: 4.5vw;
   font-weight: bold;
   color: var(--second-colour);
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 h2 {
+  padding-left: 1.5%;
+  font-family: 'Source Sans Pro';
+  font-size: 3.5vw;
+  font-weight: bold;
+  color: var(--second-colour);
+}
+
+h3 {
   position: absolute;
-  left: 21px;
-  top: 60px;
+  left: 200px;
+  margin-top: 10%;
   font-family: 'Source Sans Pro';
   font-weight: bold;
   color: var(--second-colour);
@@ -40,6 +53,9 @@ h2 {
 }
 
 nav {
-  text-align: right;
-  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1% 1%;
 }
+

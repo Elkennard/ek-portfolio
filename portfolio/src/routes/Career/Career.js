@@ -1,7 +1,9 @@
+import "./Career.css"
+
 export default function Career() {
     return (
       <main>
-        <h2>Career</h2>
+        <h3>Career - Under construction</h3>
       </main>
     );
   }

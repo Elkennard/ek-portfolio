@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import Home from "./routes/Home/Home";
 import Portfolio from './routes/Portfolio/Portfolio';
 import Career from './routes/Career/Career';
 import Contact from './routes/Contact/Contact';
@@ -13,6 +14,7 @@ root.render(
   <BrowserRouter>
   <Routes>
     <Route path='/' element={<App />}>
+    <Route index element={<Home />} />
     <Route path='/Portfolio' element={<Portfolio />} />
     <Route path='/Career' element={<Career />} />
     <Route path='/Contact' element={<Contact />} />
