@@ -17,7 +17,7 @@ h1 {
   padding-left: 1.5%;
   margin-top: -3%;
   font-family: "Source Sans Pro";
-  font-size: 4.5vw;
+  font-size: 4.5vmax;
   font-weight: bold;
   color: var(--second-colour);
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -25,8 +25,8 @@ h1 {
 
 h2 {
   padding-left: 1.5%;
-  font-family: 'Source Sans Pro';
-  font-size: 3.5vw;
+  font-family: "Source Sans Pro";
+  font-size: 3.5vmax;
   font-weight: bold;
   color: var(--second-colour);
 }
@@ -35,7 +35,7 @@ h3 {
   position: absolute;
   left: 200px;
   margin-top: 10%;
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-weight: bold;
   color: var(--second-colour);
 }
@@ -43,19 +43,64 @@ h3 {
 .inactive {
   text-decoration: none;
   color: var(--fourth-colour);
-  font-family: "Noto Sans";
 }
 
 .active {
   color: var(--second-colour);
   text-decoration: none;
-  font-family: "Noto Sans";
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 1% 1%;
+  padding: 1vmin 1vmin;
+  font-size: 2.5vmin;
+  font-family: "Noto Sans";
 }
 
+.navElipse {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 30vw;
+  top: -91vh;
+
+  background: #a7dbd1;
+  border: 10px solid #bde6db;
+  border-radius: 100%;
+  box-shadow: inset 20px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.leftElipse {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 200vmin;
+  height: 200vmin;
+  left: -145vmin;
+  top: -50vmin;
+
+  border: 20px solid #b7e1da;
+  border-radius: 100%;
+  box-shadow: inset 20px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: -2;
+}
+
+.rightElipse {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 200vmin;
+  height: 200vmin;
+  left: 55vmin;
+  top: -60vmin;
+
+  border: 20px solid #b5e2da;
+  border-radius: 100%;
+  box-shadow: inset 20px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: -3;
+}
