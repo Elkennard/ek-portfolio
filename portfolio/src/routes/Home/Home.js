@@ -1,5 +1,5 @@
 import "./Home.css";
-import headshot from "../../Assets/Profile Shot EK.jpg";
+import headshot from "../../Assets/ProfileEK.png";
 
 export default function Home() {
   return (
