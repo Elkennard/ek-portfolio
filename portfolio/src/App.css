@@ -15,9 +15,9 @@
 
 h1 {
   padding-left: 1.5%;
-  margin-top: -3%;
+  margin-top: 0vh;
   font-family: "Source Sans Pro";
-  font-size: 4.5vmax;
+  font-size: 10vmin;
   font-weight: bold;
   color: var(--second-colour);
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -26,18 +26,18 @@ h1 {
 h2 {
   padding-left: 1.5%;
   font-family: "Source Sans Pro";
-  font-size: 3.5vmax;
+  font-size: 8vmin;
   font-weight: bold;
   color: var(--second-colour);
 }
 
 h3 {
   position: absolute;
-  left: 200px;
-  margin-top: 10%;
+  left: 10vw;
+  margin-top: 30vh;
   font-family: "Source Sans Pro";
   font-weight: bold;
-  color: var(--second-colour);
+  color: var(--fourth-colour);
 }
 
 .inactive {
@@ -54,53 +54,34 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 1vmin 1vmin;
+  padding-top: 1vh;
+  padding-right: 1vw;
   font-size: 2.5vmin;
   font-family: "Noto Sans";
 }
 
 .navElipse {
-  box-sizing: border-box;
-
   position: absolute;
-  width: 100vw;
-  height: 100vh;
-  left: 30vw;
-  top: -91vh;
-
-  background: #a7dbd1;
-  border: 10px solid #bde6db;
-  border-radius: 100%;
-  box-shadow: inset 20px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 60vw;
+  top: 0vh;
+  right: 0vw;
   z-index: -1;
 }
 
 .leftElipse {
-  box-sizing: border-box;
-
   position: absolute;
-  width: 200vmin;
-  height: 200vmin;
-  left: -114vmin;
-  top: -50vmin;
-
-  border: 20px solid #b7e1da;
-  border-radius: 100%;
-  box-shadow: inset 20px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 50vw;
+  height: 100vh;
+  top: 0vh;
+  left: 0vw;
   z-index: -2;
 }
 
 .rightElipse {
-  box-sizing: border-box;
-
   position: absolute;
-  width: 200vmin;
-  height: 200vmin;
-  left: 85vmin;
-  top: -60vmin;
-
-  border: 20px solid #b5e2da;
-  border-radius: 100%;
-  box-shadow: inset 20px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 50vw;
+  height: 100vh;
+  top: 0vh;
+  right: 0vw;
   z-index: -3;
 }

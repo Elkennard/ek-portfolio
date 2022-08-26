@@ -1,11 +1,15 @@
 import "./Home.css";
-import headshot from "../../Assets/ProfileEK.png";
 
 export default function Home() {
+
+  const images = {
+    headshot: require("../../Assets/ProfileEK.png"),
+  };
+
   return (
     <main>
       <div className="intro">
-        <img src={headshot} alt="Emma Headshot" className="introImage" />
+        <img src={images.headshot} alt="Emma Headshot" className="introImage" />
         <p className="introText">
           “For the last 25 years I've been sourcing and collating venues for
           corporate events. I was ready for a new challenge and was fascinated
