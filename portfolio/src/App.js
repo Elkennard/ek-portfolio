@@ -4,9 +4,9 @@ import { NavLink, Outlet } from "react-router-dom";
 function App() {
 
   const images = {
-    navElipse: require("./Assets/navElipse.png"),
-    leftElipse: require("./Assets/leftElipse.png"),
-    rightElipse: require("./Assets/rightElipse.png"),
+    navPaint: require("./Assets/paintStripe.png"),
+    logo: require("./Assets/EKLogoSide.png"),
+    largePaint: require("./Assets/LargePaint.png"),
   };
 
   return (
@@ -29,11 +29,13 @@ function App() {
         </nav>
         <Outlet />
       </div>
-      <h1>Emma Kennard</h1>
-      <h2>Junior Developer</h2>
-      <img src={images.navElipse} alt="navigation elipse" className="navElipse"/>
-      <img src={images.leftElipse} alt="left elipse" className="leftElipse"/>
-      <img src={images.rightElipse} alt="right elipse" className="rightElipse"/>
+      <img src={images.logo} alt="Emma Kennard Logo" className="logo"/>
+      <img src={images.navPaint} alt="navigation decoration" className="navPaint"/>
+      <img
+            src={images.largePaint}
+            alt="Paint Splash"
+            className="largePaint"
+          />
       
     </div>
   );
