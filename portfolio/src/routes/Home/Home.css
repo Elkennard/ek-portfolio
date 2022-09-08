@@ -1,28 +1,94 @@
+@media only screen and (min-width: 300px) {
+  .introImage {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .introHeader {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .introText {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .largePaint {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .intro {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .introImage {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .introHeader {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .introText {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .largePaint {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
 .intro {
   position: absolute;
-  left: 10vw;
-  top: 32vmin;
-  width: 80vw;
+  left: 5vw;
+  top: 15vmax;
+  width: 90vw;
   display: grid;
   margin: auto;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 10px;
+  row-gap: 15px;
 }
 
 .introImage {
-  width: 85%;
+  place-self: center;
+  height: 50vmin;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 30px;
-  margin: auto;
 }
 
-.introText {
-  width: 85%;
+.introHeader {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 3vmin;
+  font-size: 4.5vmin;
+  text-align: left;
+  color: var(--second-colour);
+  align-self: start;
+  justify-self: start;
+  margin: 10px;
+}
+
+.introText {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.3vmin;
   text-align: right;
-  padding: 5%;
-  color: #000000;
-  margin: auto;
+  color: var(--fourth-colour);
+  align-self: center;
+  margin: 10px;
+}
+
+.largePaint {
+  place-self: center stretch;
+  z-index: -1;
+  height: 50vmin;
 }
