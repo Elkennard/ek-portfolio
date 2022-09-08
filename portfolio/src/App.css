@@ -48,3 +48,14 @@ nav {
   right: -2vw;
   z-index: -3;
 }
+
+/* Footer */
+.footerAP {
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+.linkedInAP, .gitHubAP, .cvAP {
+  width: 5vw;
+  margin: 10px;
+  }

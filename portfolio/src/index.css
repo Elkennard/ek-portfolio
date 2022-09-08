@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.linkError {
+  font-size: 2.5vmin;
+  font-family: "Noto Sans";
+  color: var(--second-colour);
+  margin-top: 100px;
+}

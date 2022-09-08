@@ -21,7 +21,7 @@ root.render(
       path="*"
       element={
         <main style={{ padding: "1rem" }}>
-          <p>Try one of the links above</p>
+          <p className="linkError">Oops, a bit of an error! Try one of the links above instead.</p>
         </main>
       }
     />
