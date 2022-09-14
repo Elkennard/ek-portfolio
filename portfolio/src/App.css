@@ -5,6 +5,13 @@
   padding: 0;
 }
 
+.App {
+  max-width:1200px;
+  margin: auto;
+  min-height: 100vh;
+  position: relative;
+}
+
 :root {
   --first-colour: #a7dbd1;
   --second-colour: #337473;
@@ -13,11 +20,10 @@
 }
 
 .logo {
-  position: absolute;
-width: 40vw;
-left: 1%;
-top: 1%;
-z-index: -2;
+  position: block;
+  width: 30vw;
+  max-width: 376px;
+  padding: 8px;
 }
 
 .inactive {
@@ -30,31 +36,57 @@ z-index: -2;
   text-decoration: none;
 }
 
+header {
+  display: flex;
+  justify-content: space-between ;
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-top: 2vh;
-  padding-right: 1vw;
-  font-size: 2.5vmin;
+  font-size: 0.5rem;
   font-family: "Noto Sans";
+  background-image: url(/src/Assets/paintStripe.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 8px 24px;
 }
 
-.navPaint {
-  position: absolute;
-  width: 50vmin;
-  height: 10vh;
-  top: -1vh;
-  right: -2vw;
-  z-index: -3;
+@media screen and (min-width: 375px) {
+  nav {
+  font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 468px) {
+  nav {
+  font-size: 1rem;
+  }
+}
+@media screen and (min-width: 568px) {
+  nav {
+  font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  nav {
+  font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  nav {
+  font-size: 1rem;
+  }
 }
 
 /* Footer */
 .footerAP {
-  position:absolute;
-  bottom:0;
-  right:0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
+
 .linkedInAP, .gitHubAP, .cvAP {
   width: 5vw;
   margin: 10px;
