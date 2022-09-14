@@ -80,15 +80,6 @@ nav {
   }
 }
 
-.navPaint {
-  position: absolute;
-  width: 50vmin;
-  height: 10vh;
-  top: -1vh;
-  right: -2vw;
-  z-index: -3;
-}
-
 /* Footer */
 .footerAP {
   position: absolute;

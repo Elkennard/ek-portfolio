@@ -3,7 +3,6 @@ import "./Home.css";
 export default function Home() {
   const images = {
     headshot: require("../../Assets/ProfileEK.png"),
-    largePaint: require("../../Assets/LargePaint.png"),
   };
 
   return (
@@ -18,11 +17,6 @@ export default function Home() {
             when I liaised with developers on projects. Now I'm sourcing and
             collating code myself!
           </p>
-          <img
-            className="largePaint"
-            src={images.largePaint}
-            alt="Paint Splash"
-          />
         </div>
       </div>
     </main>
