@@ -2,33 +2,26 @@ import "./Contact.css";
 
 export default function Contact() {
 
-  const images = {
-    linkedIn: require("../../Assets/LinkedIn.png"),
-    gitHub: require("../../Assets/GitHub.png")
-  };
   return (
-    <div className="Contact">
+    <div className="contact">
+    <h3 className="contact_header">Drop me a line</h3>
+    <p className="contact_content">I'd love to hear from you. Use one of the social media links or complete the form and I'll get back to you soon.</p>
       <form
         method="POST"
         name="contactform"
-        className="contactForm"
+        className="contact"
         action="/confirmation-page"
       >
         <input type="hidden" name="form-name" value="contactForm" />
 
-        <input type="text" name="name" placeholder="Name"/>
+        <input type="text" className="contact_name" name="name" placeholder="Name"/>
 
-        <input type="email" name="email" placeholder="Email" />
+        <input type="email" className="contact_email" name="email" placeholder="Email" />
 
-        <textarea name="message" placeholder="Message"></textarea>
+        <textarea className="contact_message" name="message" placeholder="Message"></textarea>
 
-        <button type="submit">Submit</button>
+        <button type="submit" className="contact_button">Submit</button>
       </form>
-      <div className="logos">
-      <a href="https://www.linkedin.com/in/emma-kennard/" target="_blank" rel="noreferrer">
-      <img src={images.linkedIn} alt="LinkedIn Link" className="linkedIn"></img></a>
-      <a href="https://github.com/Elkennard" target="_blank" rel="noreferrer"><img src={images.gitHub} alt="GitHub Logo" className="gitHub Link"></img></a>
-      </div>
     </div>
   );
 }

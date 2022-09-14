@@ -10,8 +10,8 @@ function Navbar() {
           <NavLink className="inactive" to="/Portfolio">
             Portfolio |
           </NavLink>{" "}
-          <NavLink className="inactive" to="/Career">
-            Career |
+          <NavLink className="inactive" to="/About">
+            About |
           </NavLink>{" "}
           <NavLink className="inactive" to="/Contact">
             Contact

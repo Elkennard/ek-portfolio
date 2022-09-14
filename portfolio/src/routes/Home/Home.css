@@ -15,7 +15,6 @@
 .intro__text {
   background-image: url(../../Assets/LargePaint.png);
   background-size: cover;
-  /* background-size: 45vw 45vh; */
   background-repeat: no-repeat;
   background-position: center;
   display: column;
@@ -26,7 +25,7 @@
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 4.5vmin;
+  font-size: 2rem;
   color: var(--second-colour);
   padding: 5px;
 }
@@ -34,7 +33,7 @@
 .intro__text__copy {
   font-family: "Noto Sans";
   font-weight: 700;
-  font-size: 3.3vmin;
+  font-size: 1.5rem;
   text-align: right;
   color: var(--fourth-colour);
   padding: 5px;
@@ -43,5 +42,29 @@
 @media screen and (min-width: 375px) {
   .intro {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .intro__text__copy {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 468px) {
+  .intro__text__copy {
+  font-size: 1rem;
+  }
+}
+@media screen and (min-width: 568px) {
+  .intro__text__copy {
+  font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .intro__text__copy {
+  font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .intro__text__copy {
+  font-size: 1.5rem;
   }
 }

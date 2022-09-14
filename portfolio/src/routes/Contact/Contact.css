@@ -1,56 +1,82 @@
-.Contact {
-  position: absolute;
-  left: 10%;
-  top: 32vmin;
-  width: 80vw;
-  display: grid;
-  margin: auto;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.contactForm {
-  width: 65%;
-  max-width: 400vmax;
+.contact {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin: auto;
+  gap: 15px;
+  margin: 10px auto;
 }
-.contactForm input,
-button,
-textarea {
-  height: 50px;
-  padding-left: 5px;
-  background: var(--first-colour);
-  border-radius: 30px;
-  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+
+.contact_header {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 3vmin;
-  padding: 5%;
-}
-.contactForm textarea {
-  height: 100px;
+  font-size: 2rem;
+  color: var(--second-colour);
+  padding: 0px 10px;
 }
 
-.contactForm button {
-  background: var(--second-colour);
-  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+.contact_content {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--fourth-colour);
+  padding: 0px 10px;
+}
+
+.contact_name, .contact_email, .contact_message {
+  width: 250px;
+  background: var(--first-colour);
   border-radius: 30px;
-  color: var(--third-colour);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.linkedIn, .gitHub {
-width: 10vw;
-}
-
-.logos {
-    display: flex;
-  flex-direction: column;
+  /* box-shadow: 1px 1px var(--second-colour); */
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 8px;
   margin: auto;
-  gap: 20px;
+}
+
+.contact_message {
+  height: 150px;
+}
+
+.contact_button {
+  background: var(--second-colour);
+  border-radius: 30px;
+  width: 100px;
+  color: var(--third-colour);
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  margin: auto;
+}
+
+@media screen and (min-width: 375px) {
+  .intro {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .contact_content {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 468px) {
+  .contact_content {
+  font-size: 1rem;
+  }
+}
+@media screen and (min-width: 568px) {
+  .contact_content {
+  font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact_content {
+  font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact_content {
+  font-size: 1.5rem;
+  }
 }
