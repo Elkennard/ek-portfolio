@@ -1,0 +1,82 @@
+.About {
+    display: grid;
+    gap: 24px;
+    padding: 30px;
+}
+
+.about_text_wrapper {
+    margin: auto;
+    background-image: url(../../Assets/LargePaint.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: column;
+    align-self: center;
+}
+
+.about_header {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--second-colour);
+    padding: 10px;
+}
+
+.about_text {
+    font-family: "Noto Sans";
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--fourth-colour);
+    padding: 10px;
+}
+
+.Tech {
+    gap: 15px;
+    margin: auto;
+}
+
+.tech_header {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--second-colour);
+    padding: 10px;
+}
+
+.tech_img {
+    height: 55px;
+    margin: 8px;
+}
+
+@media screen and (min-width: 375px) {
+    .About {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  
+    .about_text {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (min-width: 468px) {
+    .about_text {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (min-width: 568px) {
+    .about_text {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .about_text {
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .cabout_text {
+      font-size: 1.5rem;
+    }
+  }
+  
