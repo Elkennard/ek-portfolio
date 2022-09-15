@@ -1,7 +1,7 @@
 .contact_wrapper {
   display: grid;
   gap: 24px;
-  padding: 24px;
+  padding: 30px;
 }
 
 .contact_text {
