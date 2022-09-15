@@ -14,7 +14,7 @@ export default function Contact() {
           method="POST"
           name="contactform"
           className="contact"
-          action="/confirmation-page"
+          action="https://www.emmakennard.com"
         >
           <input type="hidden" name="form-name" value="contactForm" />
 
