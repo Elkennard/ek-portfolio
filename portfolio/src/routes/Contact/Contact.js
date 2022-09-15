@@ -5,12 +5,12 @@ export default function Contact() {
   return (
     <div className="contact">
     <h3 className="contact_header">Drop me a line</h3>
-    <p className="contact_content">I'd love to hear from you. Use one of the social media links or complete the form and I'll get back to you soon.</p>
+    <p className="contact_content">I'd love to hear from you. Use one of the social media links or complete the form and I'll get back to you.</p>
       <form
         method="POST"
         name="contactform"
         className="contact"
-        action="/confirmation-page"
+        action="/confirmation-page.html"
       >
         <input type="hidden" name="form-name" value="contactForm" />
 
