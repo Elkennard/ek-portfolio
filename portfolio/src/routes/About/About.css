@@ -26,7 +26,6 @@
 .about_text {
     font-family: "Noto Sans";
     font-weight: 700;
-    font-size: 1.5rem;
     color: var(--fourth-colour);
     padding: 10px;
 }
@@ -46,7 +45,6 @@
 }
 
 .tech_img {
-    height: 55px;
     margin: 8px;
 }
 
@@ -56,27 +54,47 @@
     }
   
     .about_text {
-      font-size: 1rem;
+      font-size: 0.7rem;
     }
+
+    .tech_img {
+      height: 40px;
+  }
   }
   @media screen and (min-width: 468px) {
     .about_text {
-      font-size: 1rem;
+      font-size: 0.7rem;
     }
+
+    .tech_img {
+      height: 50px;
+  }
   }
   @media screen and (min-width: 568px) {
     .about_text {
-      font-size: 1rem;
+      font-size: 0.75rem;
     }
+    .tech_img {
+      height: 55px;
+  }
   }
   @media screen and (min-width: 768px) {
     .about_text {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
+
+    .tech_img {
+      height: 55px;
+  }
+
   }
   @media screen and (min-width: 1024px) {
     .cabout_text {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
+
+    .tech_img {
+      height: 55px;
+  }
   }
   
