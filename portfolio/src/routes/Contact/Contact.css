@@ -2,14 +2,14 @@
   display: grid;
   gap: 24px;
   padding: 30px;
-}
-
-.contact_text {
-  margin: auto;
   background-image: url(../../Assets/LargePaint.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.contact_text {
+  margin: auto;
   display: column;
   align-self: center;
 }
@@ -42,7 +42,7 @@
 .contact_email,
 .contact_message {
   width: 250px;
-  background: var(--first-colour);
+  background: var(--third-colour);
   border-radius: 30px;
   font-family: "Noto Sans";
   font-style: normal;
@@ -69,10 +69,6 @@
 }
 
 @media screen and (min-width: 375px) {
-  .contact_wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-
   .contact_content {
     font-size: 1rem;
   }
