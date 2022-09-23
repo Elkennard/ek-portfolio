@@ -58,16 +58,16 @@
     }
 
     .tech_img {
-      height: 40px;
+      height: 30px;
   }
   }
   @media screen and (min-width: 468px) {
     .about_text {
-      font-size: 0.7rem;
+      font-size: 0.75rem;
     }
 
     .tech_img {
-      height: 50px;
+      height: 45px;
   }
   }
   @media screen and (min-width: 568px) {
@@ -75,7 +75,7 @@
       font-size: 0.75rem;
     }
     .tech_img {
-      height: 55px;
+      height: 50px;
   }
   }
   @media screen and (min-width: 768px) {

@@ -43,13 +43,14 @@
 .contact_message {
   width: 250px;
   background: var(--third-colour);
-  border-radius: 30px;
+  border-radius: 8px;
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   padding: 8px;
-  margin: 5px;
+  margin: auto;
+  border: none;
 }
 
 .contact_message {
@@ -57,14 +58,16 @@
 }
 
 .contact_button {
-  background: var(--second-colour);
-  border-radius: 30px;
-  width: 100px;
+  width: 150px;
+  height: 45px;
+  border: none;
+  background-color: var(--second-colour);
   color: var(--third-colour);
+  border-radius: 8px;
+  font-size: 20px;
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
   margin: auto;
 }
 

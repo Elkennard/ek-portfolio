@@ -1,0 +1,32 @@
+.portfolio_header {
+    text-align: center;
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--second-colour);
+    padding: 10px;
+}
+
+.portfolio_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio_item {
+    background: var(--first-colour);
+    overflow: hidden;
+}
+
+.portfolio_img {
+    display: block;
+    max-width: 100%;
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+}
+
+.portfolio_img:hover {
+    transform: scale(1.2);
+    opacity: .5;
+}

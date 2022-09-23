@@ -1,0 +1,91 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.modalContainer {
+  width: 500px;
+  height: 520px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.modalContainer .title {
+  display: inline-block;
+  text-align: center;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--second-colour);
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modalContainer .body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "Noto Sans";
+  font-weight: 700;
+  color: var(--fourth-colour);
+  text-align: left;
+  padding: 10px;
+}
+
+.modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer .footer button {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: var(--second-colour);
+  color: var(--third-colour);
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+#launchBtn {
+  background-color: var(--first-colour);
+  color: var(--fourth-colour)
+}
+
+.modalList {
+	padding: 0px 0px 5px 30px;
+	list-style: none;
+	background-image: url("../Assets/logocircle.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 20px;
+}
