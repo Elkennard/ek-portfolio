@@ -1,42 +1,41 @@
 import "./modal.css";
 
-export default function MediMateModal({ setMediModalOpen }) {
+export default function BreatheWithMeModal({ setBreatheModalOpen }) {
   return (
     <div className="modalBackground">
       <div className="modalContainer">
         <div className="titleCloseBtn">
           <button
             onClick={() => {
-              setMediModalOpen(false);
+              setBreatheModalOpen(false);
             }}
           >
             X
           </button>
         </div>
         <div className="title">
-          <h1>Medi-Mate</h1>
+          <h1>Breathe With Me</h1>
         </div>
         <div className="body">
           <ul>
-              <li className="modalList">A meditation app that combined a
-              Tamagotchi&reg; style pet to help motivate users to build the habit of
-              meditation.
+            <li className="modalList">
+              A breathing app to help people with asthma and anxiety.
             </li>
             <li className="modalList">
-              A month long project set by the School of Code in a team of four. </li>
-            <li className="modalList">
-              Designed for mobile first using react-native.
+              In the previous Medi-Mate project, we incorporated pulsing rings
+              instead of the chracter breathing, I wanted to bring the character
+              to life.{" "}
             </li>
             <li className="modalList">
-              I primarily
-              focused on the front-end style, functionality and project management.
+              I also added the ability to choose a hold breath option and different
+              breathe in and out times.
             </li>
             <li className="modalList">
-              Front-end tech stack: react, react-native, CSS, JS, Expo,
-              Firebase, Babel, Jest, netlify.
+              I designed the whole app, including the animated character, using a
+              sprite-sheet I had created with Piskel.
             </li>
             <li className="modalList">
-              Back-end tech stack: node.js, express, PostgreSQL, Heroku.
+              Tech stack: HTML, CSS, JS, sprite-sheet, Pisklel, Netlify.
             </li>
           </ul>
         </div>
@@ -44,7 +43,7 @@ export default function MediMateModal({ setMediModalOpen }) {
           <button
             onClick={(e) => {
               e.preventDefault();
-              window.open("https://medi-mate.netlify.app/", "_blank");
+              window.open("https://breathe-with-me.netlify.app/", "_blank");
             }}
             id="launchBtn"
           >
@@ -54,7 +53,7 @@ export default function MediMateModal({ setMediModalOpen }) {
             onClick={(e) => {
               e.preventDefault();
               window.open(
-                "https://github.com/SchoolOfCode/medi-mate-front-end",
+                "https://github.com/Elkennard/Breathing-Monkey",
                 "_blank"
               );
             }}
