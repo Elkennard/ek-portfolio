@@ -35,7 +35,7 @@ export default function BreatheWithMeModal({ setBreatheModalOpen }) {
               sprite-sheet I had created with Piskel.
             </li>
             <li className="modalList">
-              Tech stack: HTML, CSS, JS, sprite-sheet, Pisklel, Netlify.
+              Tech stack: HTML, CSS, JS, sprite-sheet, Piskel, Netlify.
             </li>
           </ul>
         </div>
