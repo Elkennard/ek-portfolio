@@ -2,12 +2,14 @@ import "./Portfolio.css";
 import { useState } from "react";
 import MediMateModal from "../../components/MediMateModal";
 import BreatheWithMeModal from "../../components/BreatheWithMeModal";
+import WeatherModal from "../../components/WeatherModal";
 import Template from "../../components/Template";
 
 
 export default function Portfolio() {
   const [mediModalOpen, setMediModalOpen] = useState(false)
   const [breatheModalOpen, setBreatheModalOpen] = useState(false)
+  const [weatherModalOpen, setWeatherModalOpen] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
 
   const images = {
@@ -15,7 +17,7 @@ export default function Portfolio() {
     breathe: require("../../Assets/breatheWithMe.png"),
     week: require("../../Assets/WeekLongProject.png"),
     commerce: require("../../Assets/ECommerceSite.png"),
-    weather: require("../../Assets/WeatherApp.png"),
+    weather: require("../../Assets/weather.png"),
     dynamic: require('../../Assets/DynamicLandingPage.png'),
   }
 
@@ -83,13 +85,13 @@ export default function Portfolio() {
 <div
           className="portfolio_item"
           onClick={() => {
-          setModalOpen(true);
+          setWeatherModalOpen(true);
         }}
         >
           <img
             className="portfolio_img"
             src={images.weather}
-            alt="weather app"
+            alt="UK weather app"
           />
         </div>
 
@@ -111,6 +113,7 @@ export default function Portfolio() {
 
       {breatheModalOpen && <BreatheWithMeModal setBreatheModalOpen={setBreatheModalOpen}/>}
       {mediModalOpen && <MediMateModal setMediModalOpen={setMediModalOpen}/>}
+      {weatherModalOpen && <WeatherModal setWeatherModalOpen={setWeatherModalOpen}/>}
       {modalOpen && <Template setModalOpen={setModalOpen}/>}
     </main>
   );
