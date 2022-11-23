@@ -4,6 +4,8 @@ import MediMateModal from "../../components/MediMateModal";
 import BreatheWithMeModal from "../../components/BreatheWithMeModal";
 import WeatherModal from "../../components/WeatherModal";
 import LandingModal from "../../components/LandingModal";
+import WellbeingModal from "../../components/WellbeingModal";
+import EcommerceModal from "../../components/EcommerceModal";
 import Template from "../../components/Template";
 
 
@@ -12,6 +14,8 @@ export default function Portfolio() {
   const [breatheModalOpen, setBreatheModalOpen] = useState(false)
   const [weatherModalOpen, setWeatherModalOpen] = useState(false)
   const [landingModalOpen, setLandingModalOpen] = useState(false)
+  const [wellbeingModalOpen, setWellbeingModalOpen] = useState(false)
+  const [ecommerceModalOpen, setEcommerceModalOpen] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
 
   const images = {
@@ -59,7 +63,7 @@ export default function Portfolio() {
         <div
           className="portfolio_item"
           onClick={() => {
-          setModalOpen(true);
+          setWellbeingModalOpen(true);
         }}
         >
           <img
@@ -73,7 +77,7 @@ export default function Portfolio() {
         <div
           className="portfolio_item"
           onClick={() => {
-          setModalOpen(true);
+          setEcommerceModalOpen(true);
         }}
         >
           <img
@@ -117,6 +121,8 @@ export default function Portfolio() {
       {mediModalOpen && <MediMateModal setMediModalOpen={setMediModalOpen}/>}
       {weatherModalOpen && <WeatherModal setWeatherModalOpen={setWeatherModalOpen}/>}
       {landingModalOpen && <LandingModal setLandingModalOpen={setLandingModalOpen}/>}
+      {wellbeingModalOpen && <WellbeingModal setWellbeingModalOpen={setWellbeingModalOpen}/>}
+      {ecommerceModalOpen && <EcommerceModal setEcommerceModalOpen={setEcommerceModalOpen}/>}
       {modalOpen && <Template setModalOpen={setModalOpen}/>}
     </main>
   );
