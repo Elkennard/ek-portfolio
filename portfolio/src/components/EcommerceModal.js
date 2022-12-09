@@ -14,25 +14,25 @@ export default function EcommerceModal({ setEcommerceModalOpen }) {
           </button>
         </div>
         <div className="title">
-          <h1>Ecommerce</h1>
+          <h1>E-Commerce Site</h1>
         </div>
         <div className="body">
           <ul>
-              <li className="modalList">Template
+              <li className="modalList">An e-commerce site with products and a payment process.
             </li>
             <li className="modalList">
-              Template </li>
+              Cards for each product, with a link through to further details for each item. </li>
             <li className="modalList">
-              Template
+              Scrolling banner of other items, you may like below each product.
             </li>
             <li className="modalList">
-              Template
+              Used Sanity as the backend database to store all product details and images. I really liked the flexibility of using Sanity without having to create a full backend.
             </li>
             <li className="modalList">
-              Template
+              I used Stripe to process payments and was surprised how quick and simple the integration was.
             </li>
             <li className="modalList">
-              Template
+              Tech Stack: react, next.js, Sanity, Stripe, CSS, JS, git, Babel, Vercel.
             </li>
           </ul>
         </div>
