@@ -206,6 +206,34 @@ export default function About() {
             alt="Piskel"
           />
         </a>
+        <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
+          <img
+            className="tech_img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
+            alt="Next.js"
+          />
+        </a>
+        <a href="https://www.sanity.io/" target="_blank" rel="noreferrer">
+          <img
+            className="tech_img"
+            src="https://cdn.worldvectorlogo.com/logos/sanity.svg"
+            alt="Sanity"
+          />
+        </a>
+        <a href="https://stripe.com/gb" target="_blank" rel="noreferrer">
+          <img
+            className="tech_img"
+            src="https://media.designrush.com/inspiration_images/135143/conversions/_1510164528_150_social-mobile.jpg"
+            alt="Stripe"
+          />
+        </a>
+        <a href="https://vercel.com/" target="_blank" rel="noreferrer">
+          <img
+            className="tech_img"
+            src="https://logovtor.com/wp-content/uploads/2020/10/vercel-inc-logo-vector.png"
+            alt="Vercel"
+          />
+        </a>
       </div>
     </main>
   );
