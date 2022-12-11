@@ -29,7 +29,7 @@ export default function Portfolio() {
 
   return (
     <main className="Portfolio">
-      <h3 className="portfolio_header">A few projects - Under construction</h3>
+      <h3 className="portfolio_header">A few projects</h3>
       <div className="portfolio_grid">
       {/* MEDI-MATE */}
       <div

@@ -18,21 +18,21 @@ export default function WellbeingModal({ setWellbeingModalOpen }) {
         </div>
         <div className="body">
           <ul>
-              <li className="modalList">Template
+              <li className="modalList">A Wellbeing app for School of Code students to aid in their mindfulness while on the course.
             </li>
             <li className="modalList">
-              Template </li>
+              In a group of five, we had to research, design and build the whole app within 5 days. </li>
             <li className="modalList">
-              Template
+              As well as the design and concept, I mainly focussed on the carousel element along with the styling and project management.
             </li>
             <li className="modalList">
-              Template
+              There is a rolling carousel of topics to choose from, with further reading resources. A five-minute timer to help students to take a break and a wellbeing check-in form that feeds back to the students' coach.
             </li>
             <li className="modalList">
-              Template
+              Front-end tech stack: React, JS, HTML, CSS, Bootstrap, Cypress, Netlify.
             </li>
             <li className="modalList">
-              Template
+              Back-end tech stack: Node, Express, PostgreSQL, Jest, Supertest, ElephantSQL, Render.
             </li>
           </ul>
         </div>
